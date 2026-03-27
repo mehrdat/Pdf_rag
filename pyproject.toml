@@ -1,7 +1,7 @@
 [project]
-name = "rl"
+name = "rag"
 version = "0.1.0"
-description = "Add your description here"
+description = "a very simple rag implementation using Ollama and FAISS"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
