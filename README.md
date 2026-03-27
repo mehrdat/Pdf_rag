@@ -1,6 +1,6 @@
 # Simple RAG for PDFs
 
-A minimal, beginner-friendly RAG system for chatting with PDF files using LangChain and Ollama.
+A minimal, RAG system for chatting with PDF files using LangChain and Ollama.
 
 **Key features:**
 - Load entire folders of PDFs automatically
@@ -17,7 +17,7 @@ pip install langchain langchain-community pypdf faiss-cpu ollama
 
 2. Start Ollama with the required models:
 ```bash
-ollama pull qwen3:0.5b
+ollama pull qwen3:0.6b
 ollama pull nomic-embed-text
 ```
 
@@ -63,21 +63,6 @@ python rag_simple.py my_pdfs/ --top-k 5
 ```bash
 $ python rag_simple.py research_papers/
 
-Loading PDFs from research_papers/...
-Loaded 45 pages from PDFs
-Splitting documents into chunks...
-Created 120 chunks
-Creating embeddings (this may take a moment)...
-Vector store created!
-
 ============================================================
 RAG Chat - Type 'exit' to quit
 ============================================================
-
-Your question: What are the main conclusions?
-```
-
----
-
-**That's it!** No complex config, no boilerplate. Just give it PDFs and start chatting.
-# Pdf_rag
